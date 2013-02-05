@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Styleguide</title>
+</head>
+<body>
+	<header>
+		<h1>Styleguide</h1>
+	</header>
+	<section>		
+		<h2>Titles</h2>
+		<p>This is a styleguide, it displays all the styles for a site in one place allowing for easy reference, perusal and updating. We'll begin with headers (at the top of this page is an &lt;h1&gt; - this should only be used for the site title)</p>
+		<h2>Second Level Header</h2>
+		<p>Second level headers, &lt;h2&gt; elements, are page titles, article titles - main content titles essentially. More than one can be used per page.</p>
+		<h3>Third Level Header</h3>
+		<p>Third level headers, &lt;h3&gt; elements, should be used as a subheader to an &lt;h2&gt; or as a header at a lower level to an &lt;h2&gt;.</p>
+		<h4>Fourth Level Header</h4>
+		<p>Third level headers, &lt;h4&gt; elements, should be used for any header at a lower level to an &lt;h3&gt;.</p>
+		<h5>Fifth Level Header</h5>
+		<p>Third level headers, &lt;h5&gt; elements, should be used for any header at a lower level to an &lt;h4&gt;.</p>
+		<h6>Sixth Level Header</h6>
+		<p>Third level headers, &lt;h6&gt; elements, should be used for any header at a lower level to an &lt;h5&gt;.</p>
+	</section>
+	<section>
+		<h2>Paragraphs</h2>
+		<p>Paragraphs contain text content, wrapped in &lt;p&gt; tags, if they contain quotes they can be wrapped in a &lt;blockquote&gt;. These can also be associated with a &lt;cite&gt; element to demarkate the source of the quote if necessary.</p>
+		<blockquote>
+			<p>We must do away with the absolutely specious notion that everybody has to earn a living. It is a fact today that one in ten thousand of us can make a technological breakthrough capable of supporting all the rest. The youth of today are absolutely right in recognizing this nonsense of earning a living. We keep inventing jobs because of this false idea that everybody has to be employed at some kind of drudgery because, according to Malthusian-Darwinian theory, he must justify his right to exist. So we have inspectors of inspectors and people making instruments for inspectors to inspect inspectors. The true business of people should be to go back to school and think about whatever it was they were thinking about before somebody came along and told them they had to earn a living.</p>
+			<cite>Buckminster Fuller</cite>
+		</blockquote>
+		<p>A paragraph of <a href="http://spaceipsum.com/">Space ipsum</a>. Since, in the long run, every planetary civilization will be endangered by impacts from space, every surviving civilization is obliged to become spacefaring--not because of exploratory or romantic zeal, but for the most practical reason imaginable: staying alive... If our long-term survival is at stake, we have a basic responsibility to our species to venture to other worlds.</p>
+		<p>And a some <a href="http://veggieipsum.com/">Veggie Ipsum</a>. Mustard kohlrabi kale pumpkin bitterleaf maize mustard beetroot dulse. Gourd courgette catsear beet greens corn swiss chard rock melon wakame courgette green bean parsley bush tomato dulse bitterleaf chickweed collard greens. Welsh onion dulse pumpkin tigernut welsh onion salad asparagus zucchini kale nori onion beet greens cabbage squash.</p>
+	</section>
+	<section>
+		<h2>Lists</h2>
+		<p>Lists come in 3 flavours. Unordered lists and ordered lists, &lt;ul&gt; and &lt;ol&gt; tags respectively, are lists of individual items and are self explanatory in their uses. Definition Lists, &lt;dl&gt; tags, are lists of pairs of items with a parent/child relationship. Traditionally used for dictionary style definitions they can be applied to other scenarios too.</p>
+		<h3>Unordered List</h3>
+		<ul>
+			<li>List item</li>
+			<li>Another list item</li>
+			<li>Another list item, with sub items (unordered)
+				<ul>
+					<li>Sub list item</li>
+					<li>Another sub list item</li>
+				</ul>
+			</li>
+			<li>List item with sub items (ordered)
+				<ol>
+					<li>Sub item A</li>
+					<li>Sub item B</li>
+				</ol>
+			</li>
+		</ul>
+		<h3>Ordered List</h3>
+		<ol>
+			<li>List item</li>
+			<li>Another list item</li>
+			<li>Another list item, with sub items (unordered)
+				<ul>
+					<li>Sub list item</li>
+					<li>Another sub list item</li>
+				</ul>
+			</li>
+			<li>List item with sub items (ordered)
+				<ol>
+					<li>Sub item A</li>
+					<li>Sub item B</li>
+				</ol>
+			</li>
+		</ol>
+		<h3>Definition List</h3>
+		<dl>
+			<dt>A term to be defined</dt>
+			<dd>The definition of the above term</dd>
+			<dt>Another term to be defined</dt>
+			<dd>The definition of another term</dd>
+			<dt>A third term to be defined</dt>
+			<dt>A fourth term to be defined</dt>
+			<dd>The definition of the third and fourth terms</dd>
+		</dl>
+	</section>
+	<section>
+		<h2>Inline Content</h2>
+		<p>Certain tags may be used anywhere within other elements, these are inline elements. These include <abbr title="The full form of the abbreviation can be added to the title attribute and will appear on hover.">abbr</abbr>, <acronym title="The full form of the acronym can be added to the title attribute and will appear on hover.">acronym</acronym>, <dfn title="The definition can be added in the title attribute">dfn</dfn>, <time datetime="01-01-2001">time</time> <code>code</code>, <kbd>kbd</kbd>, <var>var</var>, <cite>cite</cite>, <del datetime="05-02-2013">del</del>, <ins datetime="05-02-2013">ins</ins>, <sub>sub</sub>, <sup>sup</sup>, <em>em</em>, <i>i</i>, <strong>strong</strong>,  <b>b</b>, <small>small</small>, <mark>mark</mark> </p>		
+	</section>
+	<section>
+		<h2>Anchor Tags (Links)</h2>
+		<p>An element of note (yeah it gets its own section), the &lt;a&gt; tag is used to provide links both internal and external. In <acronym title="Hypertext Markup Language">HTML</acronym> versions prior to HTML5 it could only be wrapped around inline elements and content but as of HTML5 we can apply it around block level elements too, and multiple ones at that.</p>
+		<h3>Inline links</h3>
+		<p>A paragraph of text such as this one might have <a href="http://example.com">multiple</a> links contained <a href="http://example.com">within</a> it. These could be <a href="http://example.com">external</a> links, <a href="index.html">internal</a> links, or links to <a href="#top">parts of the page</a></p>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
