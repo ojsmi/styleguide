@@ -8,8 +8,20 @@
 <body>
 	<header>
 		<h1>Styleguide</h1>
+		<nav>
+			<ul>
+				<li><a href="#titles">Titles</a></li>
+				<li><a href="#header-groups">Header Groups</a></li>
+				<li><a href="#paragraphs">Paragraphs</a></li>
+				<li><a href="#lists">Lists</a></li>
+				<li><a href="#inline-content">Inline Content</a></li>
+				<li><a href="#anchor-tags">Anchor Tags</a></li>
+				<li><a href="#images-figures">Images &amp; Figures</a></li>
+				<li><a href="#embeds">Embeds</a></li>
+			</ul>
+		</nav>
 	</header>
-	<section>		
+	<section id="titles">		
 		<h2>Titles</h2>
 		<p>This is a styleguide, it displays all the styles for a site in one place allowing for easy reference, perusal and updating. We'll begin with headers (at the top of this page is an <code>&lt;h1&gt;</code> - this should only be used for the site title)</p>
 		<h2>Second Level Header</h2>
@@ -23,7 +35,7 @@
 		<h6>Sixth Level Header</h6>
 		<p>Third level headers, <code>&lt;h6&gt;</code> elements, should be used for any header at a lower level than/c an <code>&lt;h5&gt;</code>.</p>
 	</section>
-	<section>
+	<section id="header-groups">
 		<h2>Header Groups</h2>
 		<p>The <code>&lt;hgroup&gt;</code> element can be used to group <code>&lt;h*&gt;</code> tags, for example an <code>&lt;h2&gt;</code> for the main title and an <code>&lt;h3&gt;</code> as the subtitle. As a result the first <code>&lt;h*&gt;</code> (for example) may need to have a lesser bottom margin to bring it closer to the subtitle. Here's an example as described above:</p>
 		<hgroup>
@@ -31,7 +43,7 @@
 			<h3>And here we have the subtitle</h3>
 		</hgroup>
 	</section>
-	<section>
+	<section id="paragraphs">
 		<h2>Paragraphs</h2>
 		<p>Paragraphs contain text content, wrapped in <code>&lt;p&gt;</code> tags, if they contain quotes they can be wrapped in a <code>&lt;blockquote&gt;</code>. These can also be associated with a <code>&lt;cite&gt;</code> element to demarkate the source of the quote if necessary.</p>
 		<blockquote>
@@ -41,7 +53,7 @@
 		<p>A paragraph of <a href="http://spaceipsum.com/">Space ipsum</a>. Since, in the long run, every planetary civilization will be endangered by impacts from space, every surviving civilization is obliged to become spacefaring--not because of exploratory or romantic zeal, but for the most practical reason imaginable: staying alive... If our long-term survival is at stake, we have a basic responsibility to our species to venture to other worlds.</p>
 		<p>And a some <a href="http://veggieipsum.com/">Veggie Ipsum</a>. Mustard kohlrabi kale pumpkin bitterleaf maize mustard beetroot dulse. Gourd courgette catsear beet greens corn swiss chard rock melon wakame courgette green bean parsley bush tomato dulse bitterleaf chickweed collard greens. Welsh onion dulse pumpkin tigernut welsh onion salad asparagus zucchini kale nori onion beet greens cabbage squash.</p>
 	</section>
-	<section>
+	<section id="lists">
 		<h2>Lists</h2>
 		<p>Lists come in 3 flavours. Unordered lists and ordered lists, <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags respectively, are lists of individual items and are self explanatory in their uses. Definition Lists, <code>&lt;dl&gt;</code> tags, are lists of pairs of items with a parent/child relationship. Traditionally used for dictionary style definitions they can be applied to other scenarios too.</p>
 		<h3>Unordered List</h3>
@@ -89,17 +101,17 @@
 			<dd>The definition of the third and fourth terms</dd>
 		</dl>
 	</section>
-	<section>
+	<section id="inline-content">
 		<h2>Inline Content</h2>
 		<p>Certain tags may be used anywhere within other elements, these are inline elements. These include <abbr title="The full form of the abbreviation can be added to the title attribute and will appear on hover.">abbr</abbr>, <acronym title="The full form of the acronym can be added to the title attribute and will appear on hover.">acronym</acronym>, <dfn title="The definition can be added in the title attribute">dfn</dfn>, <time datetime="01-01-2001">time</time> <code>code</code>, <kbd>kbd</kbd>, <var>var</var>, <cite>cite</cite>, <del datetime="05-02-2013">del</del>, <ins datetime="05-02-2013">ins</ins>, <sub>sub</sub>, <sup>sup</sup>, <em>em</em>, <i>i</i>, <strong>strong</strong>,  <b>b</b>, <small>small</small>, <mark>mark</mark> </p>		
 	</section>
-	<section>
+	<section id="anchor-tags">
 		<h2>Anchor Tags (Links)</h2>
 		<p>An element of note (yeah it gets its own section), the <code>&lt;a&gt;</code> tag is used to provide links both internal and external. In <acronym title="Hypertext Markup Language">HTML</acronym> versions prior to HTML5 it could only be wrapped around inline elements and content but as of HTML5 we can apply it around block level elements too, and multiple ones at that.</p>
 		<h3>Inline links</h3>
 		<p>A paragraph of text such as this one might have <a href="http://example.com">multiple</a> links contained <a href="http://example.com">within</a> it. These could be <a href="http://example.com">external</a> links, <a href="index.html">internal</a> links, or links to <a href="#top">parts of the page</a></p>
 	</section>
-	<section>
+	<section id="images-figures">
 		<h2>Images &amp; Figures</h2>
 		<h3>Images</h3>
 		<img src="assets/images/01.jpg" alt="The alt attribute should only be included only when it doesn't duplicate surrounding text content." width="640" height="480">
@@ -112,7 +124,7 @@
 			<figcaption>A figure can contain a <code>figcaption</code> which is used to add a caption to a figure. The figure itself is not limited to images and can include code, text, video etc. It is also not limited to one item, although items should be part of the same 'whole'.</figcaption>
 		</figure>
 	</section>
-	<section>	
+	<section id="embeds">	
 		<h2>Embeds</h2>
 		<h3>Video</h3>
 		<p>Services like <a href="http://www.youtube.com/">Youtube</a> and <a href="https://vimeo.com/">Vimeo</a> use iframes to allow you to embed content. It's important that these do not break the layout of the site, so some examples are inclued here. A 16:9 ratio is used here.</p>		
@@ -120,7 +132,8 @@
 		<iframe src="http://player.vimeo.com/video/61003793?title=0&amp;byline=0&amp;portrait=0&amp;color=000000" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	</section>
 	<footer>
-		
+		<p>This is some footer meta information. Find out more at: <a href="https://github.com/ollyjsmith/styleguide">https://github.com/ollyjsmith/styleguide</a></p>
+		<a href="#top">Back to Top</a>
 	</footer>	
 </body>
 </html>
