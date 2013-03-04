@@ -15,13 +15,13 @@
 		<h2>Second Level Header</h2>
 		<p>Second level headers, <code>&lt;h2&gt;</code> elements, are page titles, article titles - main content titles essentially. More than one can be used per page.</p>
 		<h3>Third Level Header</h3>
-		<p>Third level headers, <code>&lt;h3&gt;</code> elements, should be used as a subheader to an <code>&lt;h2&gt;</code> or as a header at a lower level to an <code>&lt;h2&gt;</code>.</p>
+		<p>Third level headers, <code>&lt;h3&gt;</code> elements, should be used as a subheader to an <code>&lt;h2&gt;</code> or as a header at a lower level than an <code>&lt;h2&gt;</code>.</p>
 		<h4>Fourth Level Header</h4>
-		<p>Third level headers, <code>&lt;h4&gt;</code> elements, should be used for any header at a lower level to an <code>&lt;h3&gt;</code>.</p>
+		<p>Third level headers, <code>&lt;h4&gt;</code> elements, should be used for any header at a lower level than an <code>&lt;h3&gt;</code>.</p>
 		<h5>Fifth Level Header</h5>
-		<p>Third level headers, <code>&lt;h5&gt;</code> elements, should be used for any header at a lower level to an <code>&lt;h4&gt;</code>.</p>
+		<p>Third level headers, <code>&lt;h5&gt;</code> elements, should be used for any header at a lower level than an <code>&lt;h4&gt;</code>.</p>
 		<h6>Sixth Level Header</h6>
-		<p>Third level headers, <code>&lt;h6&gt;</code> elements, should be used for any header at a lower level to an <code>&lt;h5&gt;</code>.</p>
+		<p>Third level headers, <code>&lt;h6&gt;</code> elements, should be used for any header at a lower level than an <code>&lt;h5&gt;</code>.</p>
 	</section>
 	<section>
 		<h2>Header Groups</h2>
@@ -102,15 +102,22 @@
 	<section>
 		<h2>Images &amp; Figures</h2>
 		<h3>Images</h3>
-		<img src="assets/images/test.jpg" alt="The alt attribute should only be included only when it doesn't duplicate surrounding text content." width="640" height="480">
+		<img src="assets/images/01.jpg" alt="The alt attribute should only be included only when it doesn't duplicate surrounding text content." width="640" height="480">
 		<h3>Figures</h3>
 		<figure>
-			<img src="assets/images/test.jpg" alt="The alt attribute should only be included only when it doesn't duplicate surrounding text content - so it makes sense inside a figure without a caption." width="640" height="480">
+			<img src="assets/images/01.jpg" alt="The alt attribute should only be included only when it doesn't duplicate surrounding text content - so it makes sense inside a figure without a caption." width="640" height="480">
 		</figure>
 		<figure>
-			<img src="assets/images/test.jpg" alt="It doesn't make sense to include alt text inside a figure with a caption - the caption should be doing that for us." width="640" height="480">
+			<img src="assets/images/01.jpg" alt="It doesn't make sense to include alt text inside a figure with a caption - the caption should be doing that for us." width="640" height="480">
 			<figcaption>A figure can contain a <code>figcaption</code> which is used to add a caption to a figure. The figure itself is not limited to images and can include code, text, video etc. It is also not limited to one item, although items should be part of the same 'whole'.</figcaption>
 		</figure>
+	</section>
+	<section>	
+		<h2>Embeds</h2>
+		<h3>Video</h3>
+		<p>Services like <a href="http://www.youtube.com/">Youtube</a> and <a href="https://vimeo.com/">Vimeo</a> use iframes to allow you to embed content. It's important that these do not break the layout of the site, so some examples are inclued here. A 16:9 ratio is used here.</p>		
+		<iframe width="640" height="360" src="http://www.youtube.com/embed/wfNV7itwV7s?rel=0" frameborder="0" allowfullscreen></iframe>
+		
 	</section>
 	<footer>
 		
