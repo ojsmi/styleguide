@@ -1,4 +1,4 @@
 #Styleguide
 
-A base file to use when creating a styleguide.
+A HTML base to use when creating a styleguide.
  
